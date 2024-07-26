@@ -1,6 +1,6 @@
 import 'dart:html' as html;
 import 'dart:math';
-import 'dart:ui' as ui;
+import 'dart:ui_web' as ui;  // Asegúrate de importar dart:ui_web
 
 import 'package:flutter/material.dart';
 
@@ -12,10 +12,10 @@ import 'js.dart';
 class HighCharts extends StatefulWidget {
   const HighCharts(
       {required this.data,
-      required this.size,
-      this.loader = const CircularProgressIndicator(),
-      this.scripts = const [],
-      super.key});
+        required this.size,
+        this.loader = const CircularProgressIndicator(),
+        this.scripts = const [],
+        super.key});
 
   ///Custom `loader` widget, until script is loaded
   ///
